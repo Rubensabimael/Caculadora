@@ -1,7 +1,7 @@
-var a = '';
-var b = '';
-var num = [];
-var ans;
+let a = '';
+let b = '';
+let num = [];
+let ans;
 
 function sendNum(digit) {
     num.push(digit);
@@ -16,6 +16,7 @@ function sendNum(digit) {
     };
 
     document.getElementById('screen').innerHTML = a;
+
 };
 
 function equalTo() {
@@ -31,7 +32,6 @@ function equalTo() {
     }
     num.push(ans.toString());
 }
-
 
 
 function clearSr() {
