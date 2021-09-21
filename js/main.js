@@ -3,7 +3,7 @@ let b = '';
 let num = [];
 let ans;
 
-function sendNum(digit) {
+const sendNum = (digit)=> {
     num.push(digit);
 
     if (num.length !=1) {
@@ -16,10 +16,9 @@ function sendNum(digit) {
     };
 
     document.getElementById('screen').innerHTML = a;
-
 };
 
-function equalTo() {
+const equalTo = ()=> {
     document.getElementById('screen').innerHTML = '';
     for (i=0; i<num.length; i++) {
         b +=num[i];
@@ -34,7 +33,8 @@ function equalTo() {
 }
 
 
-function clearSr() {
+
+const clearSr = ()=> {
     document.getElementById('screen').innerHTML = '';
     while(num.length >0){
         num.pop();
